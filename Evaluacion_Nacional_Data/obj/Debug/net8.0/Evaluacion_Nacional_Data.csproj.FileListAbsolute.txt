@@ -1,0 +1,16 @@
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\bin\Debug\net8.0\Evaluacion_Nacional_Data.deps.json
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\bin\Debug\net8.0\Evaluacion_Nacional_Data.dll
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\bin\Debug\net8.0\Evaluacion_Nacional_Data.pdb
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\bin\Debug\net8.0\Evaluacion_Nacional_Soporte.dll
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\bin\Debug\net8.0\Evaluacion_Nacional_Soporte.pdb
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.csproj.AssemblyReference.cache
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.AssemblyInfoInputs.cache
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.AssemblyInfo.cs
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.csproj.CoreCompileInputs.cache
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.sourcelink.json
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluaci.78E58A13.Up2Date
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.dll
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\refint\Evaluacion_Nacional_Data.dll
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\Evaluacion_Nacional_Data.pdb
+C:\Users\emili\OneDrive\Documentos\Taller de Programacion\Evaluacion_Nacional\Evaluacion_Nacional_Data\obj\Debug\net8.0\ref\Evaluacion_Nacional_Data.dll

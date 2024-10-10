@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Evaluacion_Nacional/1.0.0": {
+        "dependencies": {
+          "Evaluacion_Nacional_Domain": "1.0.0",
+          "Evaluacion_Nacional_Soporte": "1.0.0"
+        },
+        "runtime": {
+          "Evaluacion_Nacional.dll": {}
+        }
+      },
+      "Evaluacion_Nacional_Data/1.0.0": {
+        "dependencies": {
+          "Evaluacion_Nacional_Soporte": "1.0.0"
+        },
+        "runtime": {
+          "Evaluacion_Nacional_Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Evaluacion_Nacional_Domain/1.0.0": {
+        "dependencies": {
+          "Evaluacion_Nacional_Data": "1.0.0",
+          "Evaluacion_Nacional_Soporte": "1.0.0"
+        },
+        "runtime": {
+          "Evaluacion_Nacional_Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Evaluacion_Nacional_Soporte/1.0.0": {
+        "runtime": {
+          "Evaluacion_Nacional_Soporte.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Evaluacion_Nacional/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Evaluacion_Nacional_Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Evaluacion_Nacional_Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Evaluacion_Nacional_Soporte/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

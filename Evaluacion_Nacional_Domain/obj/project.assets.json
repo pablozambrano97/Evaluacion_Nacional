@@ -1,0 +1,124 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Evaluacion_Nacional_Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Evaluacion_Nacional_Soporte": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Evaluacion_Nacional_Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Evaluacion_Nacional_Data.dll": {}
+        }
+      },
+      "Evaluacion_Nacional_Soporte/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Evaluacion_Nacional_Soporte.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Evaluacion_Nacional_Soporte.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Evaluacion_Nacional_Data/1.0.0": {
+      "type": "project",
+      "path": "../Evaluacion_Nacional_Data/Evaluacion_Nacional_Data.csproj",
+      "msbuildProject": "../Evaluacion_Nacional_Data/Evaluacion_Nacional_Data.csproj"
+    },
+    "Evaluacion_Nacional_Soporte/1.0.0": {
+      "type": "project",
+      "path": "../Evaluacion_Nacional_Soporte/Evaluacion_Nacional_Soporte.csproj",
+      "msbuildProject": "../Evaluacion_Nacional_Soporte/Evaluacion_Nacional_Soporte.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Evaluacion_Nacional_Data >= 1.0.0",
+      "Evaluacion_Nacional_Soporte >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\emili\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\Evaluacion_Nacional_Domain.csproj",
+      "projectName": "Evaluacion_Nacional_Domain",
+      "projectPath": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\Evaluacion_Nacional_Domain.csproj",
+      "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\emili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\Evaluacion_Nacional_Data.csproj": {
+              "projectPath": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\Evaluacion_Nacional_Data.csproj"
+            },
+            "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Soporte\\Evaluacion_Nacional_Soporte.csproj": {
+              "projectPath": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Soporte\\Evaluacion_Nacional_Soporte.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
