@@ -4,6 +4,9 @@
     <Compile Update="Autenticacion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmRegistroGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmListarTrabajadores.cs">
       <SubType>Form</SubType>
     </Compile>

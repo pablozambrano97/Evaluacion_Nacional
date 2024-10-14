@@ -34,6 +34,8 @@
             txtUsuario = new TextBox();
             txtPassword = new TextBox();
             btnIngresar = new Button();
+            linkLabel1 = new LinkLabel();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -60,7 +62,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(103, 148);
+            label3.Location = new Point(103, 162);
             label3.Name = "label3";
             label3.Size = new Size(90, 23);
             label3.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(221, 144);
+            txtPassword.Location = new Point(221, 158);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.PlaceholderText = "Ingrese Password";
@@ -96,11 +98,35 @@
             btnIngresar.UseVisualStyleBackColor = true;
             btnIngresar.Click += btnIngresar_Click;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(182, 252);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(133, 23);
+            linkLabel1.TabIndex = 6;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Rigístrese aquí.";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(221, 118);
+            label5.Name = "label5";
+            label5.Size = new Size(149, 20);
+            label5.TabIndex = 9;
+            label5.Text = "Ejemplo: 22333444-5";
+            // 
             // Autenticacion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(505, 300);
+            ClientSize = new Size(505, 318);
+            Controls.Add(label5);
+            Controls.Add(linkLabel1);
             Controls.Add(btnIngresar);
             Controls.Add(txtPassword);
             Controls.Add(txtUsuario);
@@ -121,5 +147,7 @@
         private TextBox txtUsuario;
         private TextBox txtPassword;
         private Button btnIngresar;
+        private LinkLabel linkLabel1;
+        private Label label5;
     }
 }

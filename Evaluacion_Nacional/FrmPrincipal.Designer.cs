@@ -42,6 +42,7 @@
             printPreviewToolStripMenuItem = new ToolStripMenuItem();
             printSetupToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator5 = new ToolStripSeparator();
+            cerrarSesióntoolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
             editMenu = new ToolStripMenuItem();
             undoToolStripMenuItem = new ToolStripMenuItem();
@@ -58,6 +59,7 @@
             toolsMenu = new ToolStripMenuItem();
             registrarUsuarioToolStripMenuItem = new ToolStripMenuItem();
             registrarSueldoToolStripMenuItem = new ToolStripMenuItem();
+            listarTrabajadoresToolStripMenuItem = new ToolStripMenuItem();
             windowsMenu = new ToolStripMenuItem();
             newWindowToolStripMenuItem = new ToolStripMenuItem();
             cascadeToolStripMenuItem = new ToolStripMenuItem();
@@ -83,7 +85,6 @@
             statusStrip = new StatusStrip();
             toolStripStatusLabel = new ToolStripStatusLabel();
             toolTip = new ToolTip(components);
-            listarTrabajadoresToolStripMenuItem = new ToolStripMenuItem();
             menuStrip.SuspendLayout();
             toolStrip.SuspendLayout();
             statusStrip.SuspendLayout();
@@ -103,7 +104,7 @@
             // 
             // fileMenu
             // 
-            fileMenu.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, toolStripSeparator3, saveToolStripMenuItem, saveAsToolStripMenuItem, toolStripSeparator4, printToolStripMenuItem, printPreviewToolStripMenuItem, printSetupToolStripMenuItem, toolStripSeparator5, exitToolStripMenuItem });
+            fileMenu.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, toolStripSeparator3, saveToolStripMenuItem, saveAsToolStripMenuItem, toolStripSeparator4, printToolStripMenuItem, printPreviewToolStripMenuItem, printSetupToolStripMenuItem, toolStripSeparator5, cerrarSesióntoolStripMenuItem, exitToolStripMenuItem });
             fileMenu.ImageTransparentColor = SystemColors.ActiveBorder;
             fileMenu.Name = "fileMenu";
             fileMenu.Size = new Size(73, 24);
@@ -182,6 +183,13 @@
             // 
             toolStripSeparator5.Name = "toolStripSeparator5";
             toolStripSeparator5.Size = new Size(257, 6);
+            // 
+            // cerrarSesióntoolStripMenuItem
+            // 
+            cerrarSesióntoolStripMenuItem.Name = "cerrarSesióntoolStripMenuItem";
+            cerrarSesióntoolStripMenuItem.Size = new Size(260, 26);
+            cerrarSesióntoolStripMenuItem.Text = "Cerrar Sesion";
+            cerrarSesióntoolStripMenuItem.Click += cerrarSesióntoolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
@@ -299,16 +307,23 @@
             // registrarUsuarioToolStripMenuItem
             // 
             registrarUsuarioToolStripMenuItem.Name = "registrarUsuarioToolStripMenuItem";
-            registrarUsuarioToolStripMenuItem.Size = new Size(224, 26);
+            registrarUsuarioToolStripMenuItem.Size = new Size(217, 26);
             registrarUsuarioToolStripMenuItem.Text = "Registrar Usuario";
             registrarUsuarioToolStripMenuItem.Click += registrarUsuarioToolStripMenuItem_Click;
             // 
             // registrarSueldoToolStripMenuItem
             // 
             registrarSueldoToolStripMenuItem.Name = "registrarSueldoToolStripMenuItem";
-            registrarSueldoToolStripMenuItem.Size = new Size(224, 26);
+            registrarSueldoToolStripMenuItem.Size = new Size(217, 26);
             registrarSueldoToolStripMenuItem.Text = "Registrar Sueldo";
             registrarSueldoToolStripMenuItem.Click += registrarSueldoToolStripMenuItem_Click;
+            // 
+            // listarTrabajadoresToolStripMenuItem
+            // 
+            listarTrabajadoresToolStripMenuItem.Name = "listarTrabajadoresToolStripMenuItem";
+            listarTrabajadoresToolStripMenuItem.Size = new Size(217, 26);
+            listarTrabajadoresToolStripMenuItem.Text = "Listar Trabajadores";
+            listarTrabajadoresToolStripMenuItem.Click += listarTrabajadoresToolStripMenuItem_Click;
             // 
             // windowsMenu
             // 
@@ -493,13 +508,6 @@
             toolStripStatusLabel.Size = new Size(54, 20);
             toolStripStatusLabel.Text = "Estado";
             // 
-            // listarTrabajadoresToolStripMenuItem
-            // 
-            listarTrabajadoresToolStripMenuItem.Name = "listarTrabajadoresToolStripMenuItem";
-            listarTrabajadoresToolStripMenuItem.Size = new Size(224, 26);
-            listarTrabajadoresToolStripMenuItem.Text = "Listar Trabajadores";
-            listarTrabajadoresToolStripMenuItem.Click += listarTrabajadoresToolStripMenuItem_Click;
-            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -512,7 +520,7 @@
             MainMenuStrip = menuStrip;
             Margin = new Padding(4, 5, 4, 5);
             Name = "FrmPrincipal";
-            Text = "FrmPrincipal";
+            Text = "Registro y consulta de sueldo";
             FormClosed += FrmPrincipal_FormClosed;
             Load += FrmPrincipal_Load;
             menuStrip.ResumeLayout(false);
@@ -581,6 +589,7 @@
         private ToolStripMenuItem registrarUsuarioToolStripMenuItem;
         private ToolStripMenuItem registrarSueldoToolStripMenuItem;
         private ToolStripMenuItem listarTrabajadoresToolStripMenuItem;
+        private ToolStripMenuItem cerrarSesióntoolStripMenuItem;
     }
 }
 

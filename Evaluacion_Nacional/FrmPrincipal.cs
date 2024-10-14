@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Evaluacion_Nacional_Soporte;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,17 @@ namespace Evaluacion_Nacional
     public partial class FrmPrincipal : Form
     {
         private int childFormNumber = 0;
+        protected UsuarioDTO Usuario { get; set; }
+        protected Autenticacion frmAutenticacion { get; set; }
 
-        public FrmPrincipal()
+        public FrmPrincipal(UsuarioDTO usuario, Autenticacion frmAutenticacion)
         {
             InitializeComponent();
+            this.Usuario = usuario;
+            this.frmAutenticacion = frmAutenticacion;
         }
+
+        #region Eventos
 
         private void ShowNewForm(object sender, EventArgs e)
         {
@@ -108,10 +115,19 @@ namespace Evaluacion_Nacional
         {
             Application.Exit();
         }
+        #endregion
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(@$"Hola, Usuario", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(@$"Hola, Usuario: '{Usuario.Rut_Usuario}'", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Perfilamiento();
+        }
+        private void Perfilamiento()
+        {
+            if (Usuario.Rol_Usuario != "ADMINISTRADOR")
+            {
+                this.toolsMenu.Visible = false;
+            }
         }
 
         private void registrarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,6 +149,12 @@ namespace Evaluacion_Nacional
             FrmListarTrabajadores frmListar = new FrmListarTrabajadores();
             frmListar.MdiParent = this;
             frmListar.Show();
+        }
+
+        private void cerrarSesióntoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.frmAutenticacion.Show();
+            this.Close();
         }
     }
 }

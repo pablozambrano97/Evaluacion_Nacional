@@ -35,7 +35,7 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            txtRut = new TextBox();
+            txtRutUsuario = new TextBox();
             txtNombre = new TextBox();
             txtDireccion = new TextBox();
             txtTelefono = new TextBox();
@@ -114,13 +114,13 @@
             label7.TabIndex = 6;
             label7.Text = "Valor extra:";
             // 
-            // txtRut
+            // txtRutUsuario
             // 
-            txtRut.Location = new Point(371, 98);
-            txtRut.Name = "txtRut";
-            txtRut.PlaceholderText = "Ingrese número de Rut";
-            txtRut.Size = new Size(182, 27);
-            txtRut.TabIndex = 7;
+            txtRutUsuario.Location = new Point(371, 98);
+            txtRutUsuario.Name = "txtRutUsuario";
+            txtRutUsuario.PlaceholderText = "Ingrese número de Rut";
+            txtRutUsuario.Size = new Size(182, 27);
+            txtRutUsuario.TabIndex = 7;
             // 
             // txtNombre
             // 
@@ -171,6 +171,7 @@
             btnRegistrar.TabIndex = 13;
             btnRegistrar.Text = "Registrar empleado";
             btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // FrmUsuarioRegister
             // 
@@ -183,7 +184,7 @@
             Controls.Add(txtTelefono);
             Controls.Add(txtDireccion);
             Controls.Add(txtNombre);
-            Controls.Add(txtRut);
+            Controls.Add(txtRutUsuario);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -206,7 +207,7 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox txtRut;
+        private TextBox txtRutUsuario;
         private TextBox txtNombre;
         private TextBox txtDireccion;
         private TextBox txtTelefono;
