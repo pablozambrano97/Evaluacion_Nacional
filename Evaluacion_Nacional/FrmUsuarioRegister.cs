@@ -61,12 +61,12 @@ namespace Evaluacion_Nacional
                 usuarioDTO.Direccion = txtDireccion.Text;
                 usuarioDTO.Telefono = txtTelefono.Text;
                 usuarioDTO.Rut_Usuario = txtRutUsuario.Text;
-                usuarioDTO.Valor_Hora = txtValorHora.Text;
-                usuarioDTO.Valor_Hora_Extra = txtHoraExtra.Text;
+                usuarioDTO.Valor_Hora = Convert.ToInt32(txtValorHora.Text);
+                usuarioDTO.Valor_Hora_Extra = Convert.ToInt32(txtHoraExtra.Text);
                 try
                 {
-                    empleadosRegister.ValidarUsuario(usuarioDTO); 
-                    
+                    empleadosRegister.ValidarUsuario(usuarioDTO);
+
                     empleadosRegister.CrearEmpleado(usuarioDTO);
                 }
                 catch (Exception ex)

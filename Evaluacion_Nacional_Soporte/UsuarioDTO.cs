@@ -14,8 +14,15 @@ namespace Evaluacion_Nacional_Soporte
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
-        public string Valor_Hora { get; set; }
-        public string Valor_Hora_Extra { get;set; }
+        public int Valor_Hora { get; set; }
+        public int Valor_Hora_Extra { get;set; }
+        public float Horas_Trabajadas   { get; set; }
+        public float Horas_Extras_Trabajadas { get; set; }
+
+        public string AFP { get; set; }
+        public string Salud {  get; set; }
+        public float SueldoBruto { get; set; }
+        public double SueldoLiquido { get; set; }
 
     }
 }

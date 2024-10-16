@@ -32,12 +32,10 @@ namespace Evaluacion_Nacional
                 txtPassword.Text = string.Empty;
                 principal.Show();
                 this.Hide();
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
         }
 

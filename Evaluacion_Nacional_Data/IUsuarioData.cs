@@ -18,5 +18,7 @@ namespace Evaluacion_Nacional_Data
         void RegistrarEmpleado (UsuarioDTO usuarioDTO);
 
         UsuarioDTO GetByUsuario(string Rut_Empleado);
+        UsuarioDTO GetHorasByUsuario (string Rut_Empleado);
+        void RegistrarSueldoByEmpleado (UsuarioDTO usuarioDTO);
     }
 }

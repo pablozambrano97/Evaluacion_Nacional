@@ -43,7 +43,7 @@ namespace Evaluacion_Nacional
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(validacionFormulario, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show( ex.Message, validacionFormulario, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPassword.Text = string.Empty;
                     txtRepetirPassword.Text = string.Empty;
                     txtRutUsuario.Text = string.Empty;

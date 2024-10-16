@@ -33,8 +33,6 @@
             txtRut = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            txtHorasTrabajadas = new TextBox();
-            txtHorasExtras = new TextBox();
             cbbAFP = new ComboBox();
             label5 = new Label();
             label6 = new Label();
@@ -47,6 +45,10 @@
             label8 = new Label();
             txtSueldoBruto = new TextBox();
             txtSueldoLiquido = new TextBox();
+            txtHorasTrabajadas = new MaskedTextBox();
+            txtHorasExtras = new MaskedTextBox();
+            label9 = new Label();
+            label10 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -63,7 +65,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(204, 99);
+            label2.Location = new Point(204, 82);
             label2.Name = "label2";
             label2.Size = new Size(128, 23);
             label2.TabIndex = 1;
@@ -71,7 +73,8 @@
             // 
             // txtRut
             // 
-            txtRut.Location = new Point(409, 95);
+            txtRut.CharacterCasing = CharacterCasing.Upper;
+            txtRut.Location = new Point(409, 78);
             txtRut.Name = "txtRut";
             txtRut.PlaceholderText = "Ingrese rut empleado";
             txtRut.Size = new Size(152, 27);
@@ -96,22 +99,6 @@
             label4.Size = new Size(114, 23);
             label4.TabIndex = 4;
             label4.Text = "Horas extras:";
-            // 
-            // txtHorasTrabajadas
-            // 
-            txtHorasTrabajadas.Location = new Point(204, 149);
-            txtHorasTrabajadas.Name = "txtHorasTrabajadas";
-            txtHorasTrabajadas.PlaceholderText = "Ingrese horas trabajadas";
-            txtHorasTrabajadas.Size = new Size(169, 27);
-            txtHorasTrabajadas.TabIndex = 5;
-            // 
-            // txtHorasExtras
-            // 
-            txtHorasExtras.Location = new Point(204, 197);
-            txtHorasExtras.Name = "txtHorasExtras";
-            txtHorasExtras.PlaceholderText = "Ingrese horas extras";
-            txtHorasExtras.Size = new Size(169, 27);
-            txtHorasExtras.TabIndex = 6;
             // 
             // cbbAFP
             // 
@@ -160,6 +147,7 @@
             btnCalcular.TabIndex = 11;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // btnGuardar
             // 
@@ -170,6 +158,7 @@
             btnGuardar.TabIndex = 12;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnLimpiarCampos
             // 
@@ -227,11 +216,51 @@
             txtSueldoLiquido.Size = new Size(151, 27);
             txtSueldoLiquido.TabIndex = 18;
             // 
+            // txtHorasTrabajadas
+            // 
+            txtHorasTrabajadas.Location = new Point(204, 145);
+            txtHorasTrabajadas.Mask = "99999";
+            txtHorasTrabajadas.Name = "txtHorasTrabajadas";
+            txtHorasTrabajadas.Size = new Size(169, 27);
+            txtHorasTrabajadas.TabIndex = 19;
+            txtHorasTrabajadas.ValidatingType = typeof(int);
+            // 
+            // txtHorasExtras
+            // 
+            txtHorasExtras.Location = new Point(204, 197);
+            txtHorasExtras.Mask = "99999";
+            txtHorasExtras.Name = "txtHorasExtras";
+            txtHorasExtras.Size = new Size(169, 27);
+            txtHorasExtras.TabIndex = 20;
+            txtHorasExtras.ValidatingType = typeof(int);
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(326, 249);
+            label9.Name = "label9";
+            label9.Size = new Size(149, 20);
+            label9.TabIndex = 21;
+            label9.Text = "Ejemplo: 22333444-5";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(409, 108);
+            label10.Name = "label10";
+            label10.Size = new Size(149, 20);
+            label10.TabIndex = 22;
+            label10.Text = "Ejemplo: 22333444-5";
+            // 
             // FrmRegistrarSueldo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 518);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(txtHorasExtras);
+            Controls.Add(txtHorasTrabajadas);
             Controls.Add(txtSueldoLiquido);
             Controls.Add(txtSueldoBruto);
             Controls.Add(label8);
@@ -244,8 +273,6 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(cbbAFP);
-            Controls.Add(txtHorasExtras);
-            Controls.Add(txtHorasTrabajadas);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(txtRut);
@@ -264,8 +291,6 @@
         private TextBox txtRut;
         private Label label3;
         private Label label4;
-        private TextBox txtHorasTrabajadas;
-        private TextBox txtHorasExtras;
         private ComboBox cbbAFP;
         private Label label5;
         private Label label6;
@@ -278,5 +303,9 @@
         private Label label8;
         private TextBox txtSueldoBruto;
         private TextBox txtSueldoLiquido;
+        private MaskedTextBox txtHorasTrabajadas;
+        private MaskedTextBox txtHorasExtras;
+        private Label label9;
+        private Label label10;
     }
 }

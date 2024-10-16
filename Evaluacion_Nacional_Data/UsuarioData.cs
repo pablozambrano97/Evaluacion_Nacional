@@ -84,6 +84,38 @@ namespace Evaluacion_Nacional_Data
             return returnData;
         }
 
+        public UsuarioDTO GetHorasByUsuario(string Rut_Empleado)
+        {
+            UsuarioDTO returnData = new UsuarioDTO();
+
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            string commandString = $@"SELECT [Rut_Empleado]
+                                            ,[Valor_Hora_Empleado]
+                                            ,[Valor_Hora_Extra_Empleado]
+                                            FROM [dbo].[Empleado]
+                                            WHERE Rut_Empleado = '{Rut_Empleado}'";
+
+            SqlCommand command = new SqlCommand(commandString, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                returnData = new UsuarioDTO()
+                {
+                    Rut_Usuario = reader.GetString(0),
+                    Valor_Hora = reader.GetInt32(1),
+                    Valor_Hora_Extra = reader.GetInt32(2)
+                };
+
+            }
+            connection.Close();
+
+            if (returnData.Rut_Usuario == string.Empty)
+                throw new Exception("Empleado no registrado.");
+
+            return returnData;
+        }
+
         public List<UsuarioDTO> Read()
         {
             throw new NotImplementedException();
@@ -105,9 +137,26 @@ namespace Evaluacion_Nacional_Data
             connection.Close();
         }
 
+        public void RegistrarSueldoByEmpleado(UsuarioDTO usuarioDTO)
+        {
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            string commandString = $@"INSERT INTO [dbo].[Sueldo_Empleado]
+               VALUES ('{usuarioDTO.SueldoBruto}',
+                       '{usuarioDTO.SueldoLiquido}',
+                       '{usuarioDTO.Horas_Trabajadas}',
+                       '{usuarioDTO.Horas_Extras_Trabajadas}',
+                       '{usuarioDTO.Salud}',
+                       '{usuarioDTO.AFP}',
+                       '{usuarioDTO.Rut_Usuario}')";
+            SqlCommand command = new SqlCommand(commandString, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
         public void Update(UsuarioDTO usuarioDTO)
         {
             throw new NotImplementedException();
         }
-        }
+    }
 }

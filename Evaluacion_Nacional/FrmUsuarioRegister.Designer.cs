@@ -38,10 +38,12 @@
             txtRutUsuario = new TextBox();
             txtNombre = new TextBox();
             txtDireccion = new TextBox();
-            txtTelefono = new TextBox();
-            txtValorHora = new TextBox();
-            txtHoraExtra = new TextBox();
             btnRegistrar = new Button();
+            txtValorHora = new MaskedTextBox();
+            txtHoraExtra = new MaskedTextBox();
+            txtTelefono = new MaskedTextBox();
+            label8 = new Label();
+            label9 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -58,7 +60,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(171, 102);
+            label2.Location = new Point(171, 89);
             label2.Name = "label2";
             label2.Size = new Size(136, 23);
             label2.TabIndex = 1;
@@ -98,7 +100,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(171, 296);
+            label6.Location = new Point(171, 310);
             label6.Name = "label6";
             label6.Size = new Size(97, 23);
             label6.TabIndex = 5;
@@ -108,7 +110,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(171, 346);
+            label7.Location = new Point(171, 360);
             label7.Name = "label7";
             label7.Size = new Size(102, 23);
             label7.TabIndex = 6;
@@ -116,7 +118,8 @@
             // 
             // txtRutUsuario
             // 
-            txtRutUsuario.Location = new Point(371, 98);
+            txtRutUsuario.CharacterCasing = CharacterCasing.Upper;
+            txtRutUsuario.Location = new Point(371, 85);
             txtRutUsuario.Name = "txtRutUsuario";
             txtRutUsuario.PlaceholderText = "Ingrese número de Rut";
             txtRutUsuario.Size = new Size(182, 27);
@@ -138,30 +141,6 @@
             txtDireccion.Size = new Size(182, 27);
             txtDireccion.TabIndex = 9;
             // 
-            // txtTelefono
-            // 
-            txtTelefono.Location = new Point(371, 245);
-            txtTelefono.Name = "txtTelefono";
-            txtTelefono.PlaceholderText = "Ingrese Número telefónico";
-            txtTelefono.Size = new Size(182, 27);
-            txtTelefono.TabIndex = 10;
-            // 
-            // txtValorHora
-            // 
-            txtValorHora.Location = new Point(371, 295);
-            txtValorHora.Name = "txtValorHora";
-            txtValorHora.PlaceholderText = "Ingrese valor hora";
-            txtValorHora.Size = new Size(182, 27);
-            txtValorHora.TabIndex = 11;
-            // 
-            // txtHoraExtra
-            // 
-            txtHoraExtra.Location = new Point(371, 345);
-            txtHoraExtra.Name = "txtHoraExtra";
-            txtHoraExtra.PlaceholderText = "Ingrese valor hora extra";
-            txtHoraExtra.Size = new Size(182, 27);
-            txtHoraExtra.TabIndex = 12;
-            // 
             // btnRegistrar
             // 
             btnRegistrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -173,15 +152,61 @@
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
+            // txtValorHora
+            // 
+            txtValorHora.Location = new Point(371, 306);
+            txtValorHora.Mask = "99999";
+            txtValorHora.Name = "txtValorHora";
+            txtValorHora.Size = new Size(182, 27);
+            txtValorHora.TabIndex = 14;
+            txtValorHora.ValidatingType = typeof(int);
+            // 
+            // txtHoraExtra
+            // 
+            txtHoraExtra.Location = new Point(371, 356);
+            txtHoraExtra.Mask = "99999";
+            txtHoraExtra.Name = "txtHoraExtra";
+            txtHoraExtra.Size = new Size(182, 27);
+            txtHoraExtra.TabIndex = 15;
+            txtHoraExtra.ValidatingType = typeof(int);
+            // 
+            // txtTelefono
+            // 
+            txtTelefono.Location = new Point(371, 245);
+            txtTelefono.Mask = "(+99) 0 0000-0000";
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(182, 27);
+            txtTelefono.TabIndex = 16;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(371, 115);
+            label8.Name = "label8";
+            label8.Size = new Size(149, 20);
+            label8.TabIndex = 17;
+            label8.Text = "Ejemplo: 22333444-5";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(371, 275);
+            label9.Name = "label9";
+            label9.Size = new Size(181, 20);
+            label9.TabIndex = 18;
+            label9.Text = "Ejemplo: +56 9 9999 9999";
+            // 
             // FrmUsuarioRegister
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(756, 478);
-            Controls.Add(btnRegistrar);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(txtTelefono);
             Controls.Add(txtHoraExtra);
             Controls.Add(txtValorHora);
-            Controls.Add(txtTelefono);
+            Controls.Add(btnRegistrar);
             Controls.Add(txtDireccion);
             Controls.Add(txtNombre);
             Controls.Add(txtRutUsuario);
@@ -210,9 +235,11 @@
         private TextBox txtRutUsuario;
         private TextBox txtNombre;
         private TextBox txtDireccion;
-        private TextBox txtTelefono;
-        private TextBox txtValorHora;
-        private TextBox txtHoraExtra;
         private Button btnRegistrar;
+        private MaskedTextBox txtValorHora;
+        private MaskedTextBox txtHoraExtra;
+        private MaskedTextBox txtTelefono;
+        private Label label8;
+        private Label label9;
     }
 }

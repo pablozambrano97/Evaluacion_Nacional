@@ -70,6 +70,7 @@
             // 
             // txtUsuario
             // 
+            txtUsuario.CharacterCasing = CharacterCasing.Upper;
             txtUsuario.Location = new Point(221, 88);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.PlaceholderText = "Ingrese Usuario";
