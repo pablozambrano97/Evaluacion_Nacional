@@ -17,12 +17,14 @@ namespace Evaluacion_Nacional
     {
         private UsuarioDTO usuarioDTO { get; set; }
         private SueldoRegister RegistrarSueldo { get; set; }
+        private FrmListarTrabajadores frmListarTrabajadores { get; set; }
 
         public FrmRegistrarSueldo()
         {
             InitializeComponent();
             usuarioDTO = new UsuarioDTO();
             RegistrarSueldo = new SueldoRegister();
+            frmListarTrabajadores = new FrmListarTrabajadores();
         }
 
         private string ValidarDatos()
@@ -86,8 +88,8 @@ namespace Evaluacion_Nacional
                     double DescuentoAfp = CalcularDescuentoAFP(usuarioDTO.SueldoBruto);
                     double DescuentoSalud = CalcularDescuentoSalud(usuarioDTO.SueldoBruto);
                     usuarioDTO.SueldoLiquido = (usuarioDTO.SueldoBruto) - (DescuentoAfp + DescuentoSalud);
-                    txtSueldoBruto.Text=usuarioDTO.SueldoBruto.ToString();
-                    txtSueldoLiquido.Text=usuarioDTO.SueldoLiquido.ToString();                    
+                    txtSueldoBruto.Text = usuarioDTO.SueldoBruto.ToString();
+                    txtSueldoLiquido.Text = usuarioDTO.SueldoLiquido.ToString();
                 }
                 catch (Exception ex)
                 {
@@ -118,6 +120,23 @@ namespace Evaluacion_Nacional
                     MessageBox.Show(ex.Message, validacionFormulario, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            txtRut.Text = string.Empty;
+            txtSueldoBruto.Text = string.Empty;
+            txtHorasExtras.Text = string.Empty;
+            txtHorasTrabajadas.Text = string.Empty;
+            txtSueldoLiquido.Text = string.Empty;
+            cbbAFP.Text = string.Empty;
+            cbbSalud.Text = string.Empty;
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmListarTrabajadores.Show();
         }
     }
 }

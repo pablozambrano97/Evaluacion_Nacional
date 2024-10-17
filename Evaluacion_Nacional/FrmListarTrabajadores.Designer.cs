@@ -31,11 +31,13 @@
             label1 = new Label();
             label2 = new Label();
             comboBox1 = new ComboBox();
-            listView1 = new ListView();
-            columnRut = new ColumnHeader();
-            columnNombre = new ColumnHeader();
-            columnDireccion = new ColumnHeader();
-            columnSueldo = new ColumnHeader();
+            lvSueldos = new ListView();
+            column = new ColumnHeader();
+            columnRutEmpleado = new ColumnHeader();
+            columnAFP = new ColumnHeader();
+            columnPrevision = new ColumnHeader();
+            columnSueldoBruto = new ColumnHeader();
+            columnSueldoLiquido = new ColumnHeader();
             btnModificar = new Button();
             btnEliminar = new Button();
             SuspendLayout();
@@ -69,30 +71,45 @@
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 2;
             // 
-            // listView1
+            // lvSueldos
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnRut, columnNombre, columnDireccion, columnSueldo });
-            listView1.Location = new Point(2, 143);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(795, 258);
-            listView1.TabIndex = 3;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lvSueldos.Columns.AddRange(new ColumnHeader[] { column, columnRutEmpleado, columnAFP, columnPrevision, columnSueldoBruto, columnSueldoLiquido });
+            lvSueldos.Location = new Point(2, 143);
+            lvSueldos.Name = "lvSueldos";
+            lvSueldos.Size = new Size(795, 258);
+            lvSueldos.TabIndex = 3;
+            lvSueldos.UseCompatibleStateImageBehavior = false;
+            lvSueldos.View = View.Details;
             // 
-            // columnRut
+            // column
             // 
-            columnRut.Text = "RUT";
+            column.Text = "";
+            column.Width = 1;
             // 
-            // columnNombre
+            // columnRutEmpleado
             // 
-            columnNombre.Text = "NOMBRE";
+            columnRutEmpleado.Text = "RUT EMPLEADO";
+            columnRutEmpleado.Width = 120;
             // 
-            // columnDireccion
+            // columnAFP
             // 
-            columnDireccion.Text = "Dirección";
+            columnAFP.Text = "AFP";
+            columnAFP.Width = 120;
             // 
-            // columnSueldo
+            // columnPrevision
             // 
-            columnSueldo.Text = "Sueldo líquido";
+            columnPrevision.Text = "PREVISION SALUD";
+            columnPrevision.Width = 120;
+            // 
+            // columnSueldoBruto
+            // 
+            columnSueldoBruto.Text = "SUELDO BRUTO";
+            columnSueldoBruto.Width = 120;
+            // 
+            // columnSueldoLiquido
+            // 
+            columnSueldoLiquido.Text = "SUELDO LÍQUIDO";
+            columnSueldoLiquido.Width = 120;
             // 
             // btnModificar
             // 
@@ -121,12 +138,13 @@
             ClientSize = new Size(800, 503);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificar);
-            Controls.Add(listView1);
+            Controls.Add(lvSueldos);
             Controls.Add(comboBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FrmListarTrabajadores";
             Text = "Listrar empleados";
+            Load += FrmListarTrabajadores_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,12 +154,14 @@
         private Label label1;
         private Label label2;
         private ComboBox comboBox1;
-        private ListView listView1;
-        private ColumnHeader columnRut;
-        private ColumnHeader columnNombre;
-        private ColumnHeader columnDireccion;
-        private ColumnHeader columnSueldo;
+        private ListView lvSueldos;
+        private ColumnHeader column;
+        private ColumnHeader columnRutEmpleado;
+        private ColumnHeader columnAFP;
+        private ColumnHeader columnSueldoLiquido;
         private Button btnModificar;
         private Button btnEliminar;
+        private ColumnHeader columnSueldoBruto;
+        private ColumnHeader columnPrevision;
     }
 }

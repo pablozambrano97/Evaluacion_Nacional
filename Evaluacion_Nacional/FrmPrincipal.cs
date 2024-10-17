@@ -22,6 +22,7 @@ namespace Evaluacion_Nacional
             InitializeComponent();
             this.Usuario = usuario;
             this.frmAutenticacion = frmAutenticacion;
+            this.viewMenu.Visible = false;
         }
 
         #region Eventos
@@ -73,16 +74,6 @@ namespace Evaluacion_Nacional
         {
         }
 
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
-
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LayoutMdi(MdiLayout.Cascade);
@@ -127,6 +118,7 @@ namespace Evaluacion_Nacional
             if (Usuario.Rol_Usuario != "ADMINISTRADOR")
             {
                 this.toolsMenu.Visible = false;
+                this.viewMenu.Visible = true;
             }
         }
 
@@ -155,6 +147,13 @@ namespace Evaluacion_Nacional
         {
             this.frmAutenticacion.Show();
             this.Close();
+        }
+
+        private void listarSueldoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListarTrabajadores frmListar = new FrmListarTrabajadores();
+            frmListar.MdiParent = this;
+            frmListar.Show();
         }
     }
 }

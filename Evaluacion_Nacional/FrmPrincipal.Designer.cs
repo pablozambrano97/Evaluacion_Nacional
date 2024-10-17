@@ -54,8 +54,7 @@
             toolStripSeparator7 = new ToolStripSeparator();
             selectAllToolStripMenuItem = new ToolStripMenuItem();
             viewMenu = new ToolStripMenuItem();
-            toolBarToolStripMenuItem = new ToolStripMenuItem();
-            statusBarToolStripMenuItem = new ToolStripMenuItem();
+            listarSueldoToolStripMenuItem = new ToolStripMenuItem();
             toolsMenu = new ToolStripMenuItem();
             registrarUsuarioToolStripMenuItem = new ToolStripMenuItem();
             registrarSueldoToolStripMenuItem = new ToolStripMenuItem();
@@ -272,30 +271,17 @@
             // 
             // viewMenu
             // 
-            viewMenu.DropDownItems.AddRange(new ToolStripItem[] { toolBarToolStripMenuItem, statusBarToolStripMenuItem });
+            viewMenu.DropDownItems.AddRange(new ToolStripItem[] { listarSueldoToolStripMenuItem });
             viewMenu.Name = "viewMenu";
-            viewMenu.Size = new Size(44, 24);
-            viewMenu.Text = "&Ver";
+            viewMenu.Size = new Size(97, 24);
+            viewMenu.Text = "Empleados";
             // 
-            // toolBarToolStripMenuItem
+            // listarSueldoToolStripMenuItem
             // 
-            toolBarToolStripMenuItem.Checked = true;
-            toolBarToolStripMenuItem.CheckOnClick = true;
-            toolBarToolStripMenuItem.CheckState = CheckState.Checked;
-            toolBarToolStripMenuItem.Name = "toolBarToolStripMenuItem";
-            toolBarToolStripMenuItem.Size = new Size(238, 26);
-            toolBarToolStripMenuItem.Text = "&Barra de herramientas";
-            toolBarToolStripMenuItem.Click += ToolBarToolStripMenuItem_Click;
-            // 
-            // statusBarToolStripMenuItem
-            // 
-            statusBarToolStripMenuItem.Checked = true;
-            statusBarToolStripMenuItem.CheckOnClick = true;
-            statusBarToolStripMenuItem.CheckState = CheckState.Checked;
-            statusBarToolStripMenuItem.Name = "statusBarToolStripMenuItem";
-            statusBarToolStripMenuItem.Size = new Size(238, 26);
-            statusBarToolStripMenuItem.Text = "&Barra de estado";
-            statusBarToolStripMenuItem.Click += StatusBarToolStripMenuItem_Click;
+            listarSueldoToolStripMenuItem.Name = "listarSueldoToolStripMenuItem";
+            listarSueldoToolStripMenuItem.Size = new Size(224, 26);
+            listarSueldoToolStripMenuItem.Text = "Listar Sueldo";
+            listarSueldoToolStripMenuItem.Click += listarSueldoToolStripMenuItem_Click;
             // 
             // toolsMenu
             // 
@@ -566,8 +552,6 @@
         private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewMenu;
-        private System.Windows.Forms.ToolStripMenuItem toolBarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem statusBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsMenu;
         private System.Windows.Forms.ToolStripMenuItem windowsMenu;
         private System.Windows.Forms.ToolStripMenuItem newWindowToolStripMenuItem;
@@ -590,6 +574,7 @@
         private ToolStripMenuItem registrarSueldoToolStripMenuItem;
         private ToolStripMenuItem listarTrabajadoresToolStripMenuItem;
         private ToolStripMenuItem cerrarSesióntoolStripMenuItem;
+        private ToolStripMenuItem listarSueldoToolStripMenuItem;
     }
 }
 

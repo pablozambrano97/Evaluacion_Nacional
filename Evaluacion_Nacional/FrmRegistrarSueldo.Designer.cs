@@ -169,6 +169,7 @@
             btnLimpiarCampos.TabIndex = 13;
             btnLimpiarCampos.Text = "Limpiar";
             btnLimpiarCampos.UseVisualStyleBackColor = true;
+            btnLimpiarCampos.Click += btnLimpiarCampos_Click;
             // 
             // btnListar
             // 
@@ -179,6 +180,7 @@
             btnListar.TabIndex = 14;
             btnListar.Text = "Listar";
             btnListar.UseVisualStyleBackColor = true;
+            btnListar.Click += btnListar_Click;
             // 
             // label7
             // 

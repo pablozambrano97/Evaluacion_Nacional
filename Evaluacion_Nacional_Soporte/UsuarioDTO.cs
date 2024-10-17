@@ -21,7 +21,7 @@ namespace Evaluacion_Nacional_Soporte
 
         public string AFP { get; set; }
         public string Salud {  get; set; }
-        public float SueldoBruto { get; set; }
+        public double SueldoBruto { get; set; }
         public double SueldoLiquido { get; set; }
 
     }

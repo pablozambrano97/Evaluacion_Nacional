@@ -1,5 +1,6 @@
 ﻿using Evaluacion_Nacional_Soporte;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace Evaluacion_Nacional_Data
 {
@@ -118,7 +119,35 @@ namespace Evaluacion_Nacional_Data
 
         public List<UsuarioDTO> Read()
         {
-            throw new NotImplementedException();
+            List<UsuarioDTO> returnData = new List<UsuarioDTO>();
+
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            string commandString = $@"SELECT 
+                       [Rut_Empleado]
+                      ,[AFP]
+                      ,[Prevision_Salud]
+                      ,[Sueldo_Liquido_Empleado]
+                      ,[Sueldo_Bruto_Empleado]
+                  FROM [dbo].[Sueldo_Empleado]";
+
+            SqlCommand command = new SqlCommand(commandString, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                UsuarioDTO row = new UsuarioDTO()
+                {
+                    Rut_Usuario = reader.GetString(0),
+                    AFP = reader.GetString(1),
+                    Salud = reader.GetString(2),
+                    SueldoLiquido = reader.GetDouble(3),
+                    SueldoBruto = reader.GetDouble(4)
+                };
+                returnData.Add(row);
+            }
+            connection.Close();
+
+            return returnData;
         }
 
         public void RegistrarEmpleado(UsuarioDTO usuarioDTO)

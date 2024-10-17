@@ -3,31 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional\\frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional\\frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A9D60CB-847A-4B70-BD72-DD33E16367D8}|..\\Evaluacion_Nacional_Domain\\Evaluacion_Nacional_Domain.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional_domain\\sueldoregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{649A2505-157F-47CC-8B77-6833B2D9FD57}|..\\Evaluacion_Nacional_Data\\Evaluacion_Nacional_Data.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional_data\\usuariodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional\\frmregistrogeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmregistrogeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9D60CB-847A-4B70-BD72-DD33E16367D8}|..\\Evaluacion_Nacional_Domain\\Evaluacion_Nacional_Domain.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional_domain\\listarsueldos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A45652C1-179D-4B3E-8FB7-E66460BA0101}|..\\Evaluacion_Nacional_Soporte\\Evaluacion_Nacional_Soporte.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional_soporte\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{649A2505-157F-47CC-8B77-6833B2D9FD57}|..\\Evaluacion_Nacional_Data\\Evaluacion_Nacional_Data.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional_data\\iusuariodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9D60CB-847A-4B70-BD72-DD33E16367D8}|..\\Evaluacion_Nacional_Domain\\Evaluacion_Nacional_Domain.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional_domain\\registerdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional\\frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmregistrarsueldo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|c:\\users\\emili\\onedrive\\documentos\\taller de programacion\\evaluacion_nacional\\evaluacion_nacional\\frmlistartrabajadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmlistartrabajadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\frmlistartrabajadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BDC01D7B-093E-4E83-946B-848FA8B7F7AB}|Evaluacion_Nacional.csproj|solutionrelative:frmlistartrabajadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,110 +43,120 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUsuarioData.cs",
-              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\IUsuarioData.cs",
-              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Data\\IUsuarioData.cs",
-              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\IUsuarioData.cs",
-              "RelativeToolTip": "..\\Evaluacion_Nacional_Data\\IUsuarioData.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:38:31.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SueldoRegister.cs",
-              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\SueldoRegister.cs",
-              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Domain\\SueldoRegister.cs",
-              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\SueldoRegister.cs",
-              "RelativeToolTip": "..\\Evaluacion_Nacional_Domain\\SueldoRegister.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:21:02.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T23:21:00.561Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FrmRegistroGeneral.cs",
-              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmRegistroGeneral.cs",
-              "RelativeDocumentMoniker": "FrmRegistroGeneral.cs",
-              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmRegistroGeneral.cs",
-              "RelativeToolTip": "FrmRegistroGeneral.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T02:59:54.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "FrmRegistrarSueldo.cs",
               "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmRegistrarSueldo.cs",
               "RelativeDocumentMoniker": "FrmRegistrarSueldo.cs",
               "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmRegistrarSueldo.cs",
               "RelativeToolTip": "FrmRegistrarSueldo.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAiwGEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBMAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T02:45:28.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
-              "RelativeToolTip": "..\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:14:16.522Z",
+              "WhenOpened": "2024-10-16T23:19:03.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UsuarioData.cs",
-              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\UsuarioData.cs",
-              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Data\\UsuarioData.cs",
-              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\UsuarioData.cs",
-              "RelativeToolTip": "..\\Evaluacion_Nacional_Data\\UsuarioData.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAowHQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T00:20:58.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FrmRegistrarSueldo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmRegistrarSueldo.cs",
               "RelativeDocumentMoniker": "FrmRegistrarSueldo.cs",
               "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmRegistrarSueldo.cs [Dise\u00F1o]",
               "RelativeToolTip": "FrmRegistrarSueldo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:16:03.751Z",
+              "WhenOpened": "2024-10-16T23:18:55.434Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterDomain.cs",
-              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\RegisterDomain.cs",
-              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Domain\\RegisterDomain.cs",
-              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\RegisterDomain.cs",
-              "RelativeToolTip": "..\\Evaluacion_Nacional_Domain\\RegisterDomain.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
+              "RelativeToolTip": "..\\Evaluacion_Nacional_Soporte\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:21:47.001Z",
+              "WhenOpened": "2024-10-16T23:15:57.248Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListarSueldos.cs",
+              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\ListarSueldos.cs",
+              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Domain\\ListarSueldos.cs",
+              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Domain\\ListarSueldos.cs",
+              "RelativeToolTip": "..\\Evaluacion_Nacional_Domain\\ListarSueldos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T23:00:16.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioData.cs",
+              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\UsuarioData.cs",
+              "RelativeDocumentMoniker": "..\\Evaluacion_Nacional_Data\\UsuarioData.cs",
+              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional_Data\\UsuarioData.cs",
+              "RelativeToolTip": "..\\Evaluacion_Nacional_Data\\UsuarioData.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwLwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T00:20:58.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmPrincipal.cs",
+              "RelativeToolTip": "FrmPrincipal.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T23:21:04.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmListarTrabajadores.cs",
+              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmListarTrabajadores.cs",
+              "RelativeDocumentMoniker": "FrmListarTrabajadores.cs",
+              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmListarTrabajadores.cs",
+              "RelativeToolTip": "FrmListarTrabajadores.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:51:41.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmListarTrabajadores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmListarTrabajadores.cs",
+              "RelativeDocumentMoniker": "FrmListarTrabajadores.cs",
+              "ToolTip": "C:\\Users\\emili\\OneDrive\\Documentos\\Taller de Programacion\\Evaluacion_Nacional\\Evaluacion_Nacional\\FrmListarTrabajadores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmListarTrabajadores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T22:44:13.773Z"
             }
           ]
         }
