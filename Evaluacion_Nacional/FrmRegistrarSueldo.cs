@@ -19,12 +19,37 @@ namespace Evaluacion_Nacional
         private SueldoRegister RegistrarSueldo { get; set; }
         private FrmListarTrabajadores frmListarTrabajadores { get; set; }
 
-        public FrmRegistrarSueldo()
+        public FrmRegistrarSueldo(UsuarioDTO usuario)
         {
             InitializeComponent();
-            usuarioDTO = new UsuarioDTO();
+            this.usuarioDTO = usuario;
             RegistrarSueldo = new SueldoRegister();
-            frmListarTrabajadores = new FrmListarTrabajadores();
+            frmListarTrabajadores = new FrmListarTrabajadores(usuario);
+        }
+        private void FrmRegistrarSueldo_Load(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrEmpty(usuarioDTO.Rut_Usuario))
+            {
+                try
+                {
+                    usuarioDTO = RegistrarSueldo.ObtenerSueldoById(usuarioDTO);
+                    txtRut.Text = usuarioDTO.Rut_Usuario;
+                    txtHorasExtras.Text = usuarioDTO.Horas_Extras_Trabajadas.ToString();
+                    txtHorasTrabajadas.Text = usuarioDTO.Horas_Trabajadas.ToString();
+                    txtSueldoBruto.Text = usuarioDTO.SueldoBruto.ToString();
+                    txtSueldoLiquido.Text = usuarioDTO.SueldoLiquido.ToString();
+                    cbbAFP.Text = usuarioDTO.AFP;
+                    cbbSalud.Text = usuarioDTO.Salud;
+
+
+                    usuarioDTO.FlagEdicion = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error al cargar datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
 
         private string ValidarDatos()
@@ -81,20 +106,42 @@ namespace Evaluacion_Nacional
             else
             {
                 usuarioDTO.Rut_Usuario = txtRut.Text;
-                try
+                if (usuarioDTO.FlagEdicion)
                 {
-                    usuarioDTO = RegistrarSueldo.ConsultarValorHoras(usuarioDTO);
-                    usuarioDTO.SueldoBruto = (usuarioDTO.Valor_Hora * Convert.ToInt32(txtHorasTrabajadas.Text) + (usuarioDTO.Valor_Hora_Extra * Convert.ToInt32(txtHorasExtras.Text)));
-                    double DescuentoAfp = CalcularDescuentoAFP(usuarioDTO.SueldoBruto);
-                    double DescuentoSalud = CalcularDescuentoSalud(usuarioDTO.SueldoBruto);
-                    usuarioDTO.SueldoLiquido = (usuarioDTO.SueldoBruto) - (DescuentoAfp + DescuentoSalud);
-                    txtSueldoBruto.Text = usuarioDTO.SueldoBruto.ToString();
-                    txtSueldoLiquido.Text = usuarioDTO.SueldoLiquido.ToString();
+                    try
+                    {
+                        usuarioDTO = RegistrarSueldo.ConsultarValorHoras(usuarioDTO);
+                        usuarioDTO.SueldoBruto = (usuarioDTO.Valor_Hora * Convert.ToInt32(txtHorasTrabajadas.Text) + (usuarioDTO.Valor_Hora_Extra * Convert.ToInt32(txtHorasExtras.Text)));
+                        double DescuentoAfp = CalcularDescuentoAFP(usuarioDTO.SueldoBruto);
+                        double DescuentoSalud = CalcularDescuentoSalud(usuarioDTO.SueldoBruto);
+                        usuarioDTO.SueldoLiquido = (usuarioDTO.SueldoBruto) - (DescuentoAfp + DescuentoSalud);
+                        txtSueldoBruto.Text = usuarioDTO.SueldoBruto.ToString();
+                        txtSueldoLiquido.Text = usuarioDTO.SueldoLiquido.ToString();
+                        usuarioDTO.FlagEdicion = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, validacionFormulario, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message, validacionFormulario, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    try
+                    {
+                        usuarioDTO = RegistrarSueldo.ConsultarValorHoras(usuarioDTO);
+                        usuarioDTO.SueldoBruto = (usuarioDTO.Valor_Hora * Convert.ToInt32(txtHorasTrabajadas.Text) + (usuarioDTO.Valor_Hora_Extra * Convert.ToInt32(txtHorasExtras.Text)));
+                        double DescuentoAfp = CalcularDescuentoAFP(usuarioDTO.SueldoBruto);
+                        double DescuentoSalud = CalcularDescuentoSalud(usuarioDTO.SueldoBruto);
+                        usuarioDTO.SueldoLiquido = (usuarioDTO.SueldoBruto) - (DescuentoAfp + DescuentoSalud);
+                        txtSueldoBruto.Text = usuarioDTO.SueldoBruto.ToString();
+                        txtSueldoLiquido.Text = usuarioDTO.SueldoLiquido.ToString();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, validacionFormulario, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
+                
             }
         }
 
@@ -113,7 +160,15 @@ namespace Evaluacion_Nacional
                     usuarioDTO.Horas_Extras_Trabajadas = Convert.ToInt32(txtHorasExtras.Text);
                     usuarioDTO.AFP = cbbAFP.Text;
                     usuarioDTO.Salud = cbbSalud.Text;
-                    usuarioDTO = RegistrarSueldo.RegistrarSueldoByEmpleado(usuarioDTO);
+                    if (usuarioDTO.FlagEdicion)
+                    {
+                        RegistrarSueldo.ModificarUsuario(usuarioDTO);
+                    }
+                    else
+                    {
+                        usuarioDTO = RegistrarSueldo.RegistrarSueldoByEmpleado(usuarioDTO);
+                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -138,5 +193,7 @@ namespace Evaluacion_Nacional
             this.Hide();
             frmListarTrabajadores.Show();
         }
+
+
     }
 }

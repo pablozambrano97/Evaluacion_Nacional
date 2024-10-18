@@ -34,5 +34,14 @@ namespace Evaluacion_Nacional_Domain
             data.RegistrarSueldoByEmpleado(usuarioDTO);
             throw new Exception($@"Sueldo Empleado {usuarioDTO.Rut_Usuario} registrado con exito");
         }
+        public void ModificarUsuario(UsuarioDTO usuarioDto)
+        {
+            data.Update(usuarioDto);
+            throw new Exception($@"Sueldo Empleado {usuarioDto.Rut_Usuario} modificado con exito");
+        }
+        public UsuarioDTO ObtenerSueldoById(UsuarioDTO usuarioDTO)
+        {
+            return data.GetSueldoByID(usuarioDTO);
+        }
     }
 }

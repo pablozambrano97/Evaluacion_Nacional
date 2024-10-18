@@ -23,6 +23,9 @@ namespace Evaluacion_Nacional_Soporte
         public string Salud {  get; set; }
         public double SueldoBruto { get; set; }
         public double SueldoLiquido { get; set; }
+        
+        public bool EsAdmin { get; set; }
+        public bool FlagEdicion {  get; set; }
 
     }
 }

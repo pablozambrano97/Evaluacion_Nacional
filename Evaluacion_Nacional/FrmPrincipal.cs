@@ -16,13 +16,16 @@ namespace Evaluacion_Nacional
         private int childFormNumber = 0;
         protected UsuarioDTO Usuario { get; set; }
         protected Autenticacion frmAutenticacion { get; set; }
+        private bool FlagAdmin { get; set; }
 
         public FrmPrincipal(UsuarioDTO usuario, Autenticacion frmAutenticacion)
         {
             InitializeComponent();
             this.Usuario = usuario;
+            usuario.EsAdmin = false;
             this.frmAutenticacion = frmAutenticacion;
             this.viewMenu.Visible = false;
+
         }
 
         #region Eventos
@@ -119,6 +122,11 @@ namespace Evaluacion_Nacional
             {
                 this.toolsMenu.Visible = false;
                 this.viewMenu.Visible = true;
+
+            }
+            else
+            {
+                Usuario.EsAdmin = true;
             }
         }
 
@@ -131,14 +139,14 @@ namespace Evaluacion_Nacional
 
         private void registrarSueldoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmRegistrarSueldo frmRegistrarSueldo = new FrmRegistrarSueldo();
+            FrmRegistrarSueldo frmRegistrarSueldo = new FrmRegistrarSueldo(Usuario);
             frmRegistrarSueldo.MdiParent = this;
             frmRegistrarSueldo.Show();
         }
 
         private void listarTrabajadoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmListarTrabajadores frmListar = new FrmListarTrabajadores();
+            FrmListarTrabajadores frmListar = new FrmListarTrabajadores(Usuario);
             frmListar.MdiParent = this;
             frmListar.Show();
         }
@@ -151,7 +159,7 @@ namespace Evaluacion_Nacional
 
         private void listarSueldoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmListarTrabajadores frmListar = new FrmListarTrabajadores();
+            FrmListarTrabajadores frmListar = new FrmListarTrabajadores(Usuario);
             frmListar.MdiParent = this;
             frmListar.Show();
         }

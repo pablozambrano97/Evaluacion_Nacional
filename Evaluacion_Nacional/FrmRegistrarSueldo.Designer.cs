@@ -282,6 +282,7 @@
             Controls.Add(label1);
             Name = "FrmRegistrarSueldo";
             Text = "Registrar sueldo empleado";
+            Load += FrmRegistrarSueldo_Load;
             ResumeLayout(false);
             PerformLayout();
         }

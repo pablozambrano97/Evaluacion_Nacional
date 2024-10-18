@@ -10,9 +10,10 @@ namespace Evaluacion_Nacional_Data
     public interface IUsuarioData
     {
         void Create(UsuarioDTO usuarioDto);
-        List<UsuarioDTO> Read();
         void Update(UsuarioDTO usuarioDTO);
         void Delete(UsuarioDTO usuarioDTO);
+        List<UsuarioDTO> Read();
+        UsuarioDTO GetSueldoByID(UsuarioDTO usuarioDTO);
         UsuarioDTO GetByIdentifier(string Rut_Usuario);
 
         void RegistrarEmpleado (UsuarioDTO usuarioDTO);
@@ -20,5 +21,6 @@ namespace Evaluacion_Nacional_Data
         UsuarioDTO GetByUsuario(string Rut_Empleado);
         UsuarioDTO GetHorasByUsuario (string Rut_Empleado);
         void RegistrarSueldoByEmpleado (UsuarioDTO usuarioDTO);
+        List<UsuarioDTO> GetSueldoByIdList(string Rut_Usuario);
     }
 }

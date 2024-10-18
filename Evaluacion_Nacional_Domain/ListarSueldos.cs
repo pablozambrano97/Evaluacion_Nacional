@@ -12,13 +12,28 @@ namespace Evaluacion_Nacional_Domain
     public class ListarSueldos
     {
         private IUsuarioData data;
+        private UsuarioDTO usuarioDTO { get; set; }
         public ListarSueldos()
         {
             this.data = new UsuarioData();
+            usuarioDTO = new UsuarioDTO();
         }
-        public List<UsuarioDTO> ListarUsuarios()
+        public List<UsuarioDTO> ListarUsuarios(UsuarioDTO usuario)
+        {   
+            if (usuario.EsAdmin)
+            {
+                return data.Read();
+            }
+            else
+            {
+                return data.GetSueldoByIdList(usuario.Rut_Usuario);
+            }
+        }
+        public void EliminarSueldo(UsuarioDTO usuarioDTO)
         {
-            return data.Read();
+                data.Delete(usuarioDTO);
+                throw new Exception($@"Empleado {usuarioDTO.Rut_Usuario} eliminado con exito");
         }
+
     }
 }

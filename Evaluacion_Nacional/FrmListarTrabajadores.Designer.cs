@@ -74,12 +74,14 @@
             // lvSueldos
             // 
             lvSueldos.Columns.AddRange(new ColumnHeader[] { column, columnRutEmpleado, columnAFP, columnPrevision, columnSueldoBruto, columnSueldoLiquido });
+            lvSueldos.GridLines = true;
             lvSueldos.Location = new Point(2, 143);
             lvSueldos.Name = "lvSueldos";
             lvSueldos.Size = new Size(795, 258);
             lvSueldos.TabIndex = 3;
             lvSueldos.UseCompatibleStateImageBehavior = false;
             lvSueldos.View = View.Details;
+            lvSueldos.SelectedIndexChanged += lvSueldos_SelectedIndexChanged;
             // 
             // column
             // 
@@ -120,6 +122,7 @@
             btnModificar.TabIndex = 4;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
             // 
             // btnEliminar
             // 
@@ -130,6 +133,7 @@
             btnEliminar.TabIndex = 5;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // FrmListarTrabajadores
             // 

@@ -21,11 +21,6 @@ namespace Evaluacion_Nacional_Data
             connection.Close();
         }
 
-        public void Delete(UsuarioDTO usuarioDTO)
-        {
-            throw new NotImplementedException();
-        }
-
         public UsuarioDTO GetByIdentifier(string Rut_Usuario)
         {
             UsuarioDTO returnData = new UsuarioDTO();
@@ -185,7 +180,111 @@ namespace Evaluacion_Nacional_Data
 
         public void Update(UsuarioDTO usuarioDTO)
         {
-            throw new NotImplementedException();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            string commandString = $@"UPDATE Sueldo_Empleado
+                   SET Sueldo_Bruto_Empleado = '{usuarioDTO.SueldoBruto}'
+                      ,Sueldo_Liquido_Empleado = '{usuarioDTO.SueldoLiquido}'                     
+                      ,Horas_Trabajadas = {usuarioDTO.Horas_Trabajadas}
+                      ,Horas_Extras_Trabajadas = {usuarioDTO.Horas_Extras_Trabajadas}
+                      ,Prevision_Salud = '{usuarioDTO.Salud}'
+                      ,AFP = '{usuarioDTO.AFP}'
+
+                 WHERE Rut_Empleado = '{usuarioDTO.Rut_Usuario}'";
+
+            SqlCommand command = new SqlCommand(commandString, connection);
+            int evalRowsAfectadas = command.ExecuteNonQuery();
+            connection.Close();
+
+            if (evalRowsAfectadas == 0)
+                throw new Exception("No se encontraron elementos");
+        }
+        public void Delete(UsuarioDTO usuarioDTO)
+        {
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            string commandString = $@"DELETE FROM [dbo].[Sueldo_Empleado]
+                 WHERE Rut_Empleado = '{usuarioDTO.Rut_Usuario}'";
+
+            SqlCommand command = new SqlCommand(commandString, connection);
+            int evalRowsAfectadas = command.ExecuteNonQuery();
+            connection.Close();
+
+            if (evalRowsAfectadas == 0)
+                throw new Exception("No se encontraron elementos");
+        }
+
+        public UsuarioDTO GetSueldoByID(UsuarioDTO usuarioDTO)
+        {
+            UsuarioDTO returnData = new UsuarioDTO();
+
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            string commandString = $@"SELECT 
+                       [Rut_Empleado]
+                      ,[AFP]
+                      ,[Prevision_Salud]
+                      ,[Sueldo_Liquido_Empleado]
+                      ,[Sueldo_Bruto_Empleado]
+                      ,[Horas_Trabajadas]
+                      ,[Horas_Extras_Trabajadas]
+                  FROM [dbo].[Sueldo_Empleado] 
+                  WHERE Rut_Empleado = '{usuarioDTO.Rut_Usuario}'";
+
+            SqlCommand command = new SqlCommand(commandString, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                returnData = new UsuarioDTO()
+                {
+                    Rut_Usuario = reader.GetString(0),
+                    AFP = reader.GetString(1),
+                    Salud = reader.GetString(2),
+                    SueldoLiquido = reader.GetDouble(3),
+                    SueldoBruto = reader.GetDouble(4),
+                    Horas_Trabajadas = (float)reader.GetDouble(5),
+                    Horas_Extras_Trabajadas = (float)reader.GetDouble(6),
+                    FlagEdicion = true
+                };
+
+            }
+            connection.Close();
+
+            return returnData;
+        }
+
+        public List<UsuarioDTO> GetSueldoByIdList(string Rut_Usuario)
+        {
+            List<UsuarioDTO> returnData = new List<UsuarioDTO>();
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            string commandString = $@"SELECT 
+                       [Rut_Empleado]
+                      ,[AFP]
+                      ,[Prevision_Salud]
+                      ,[Sueldo_Liquido_Empleado]
+                      ,[Sueldo_Bruto_Empleado]
+                  FROM [dbo].[Sueldo_Empleado] 
+                  WHERE Rut_Empleado = '{Rut_Usuario}'";
+
+            SqlCommand command = new SqlCommand(commandString, connection);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                UsuarioDTO row = new UsuarioDTO()
+                {
+                    Rut_Usuario = reader.GetString(0),
+                    AFP = reader.GetString(1),
+                    Salud = reader.GetString(2),
+                    SueldoLiquido = reader.GetDouble(3),
+                    SueldoBruto = reader.GetDouble(4)
+                };
+                returnData.Add(row);
+            }
+            connection.Close();
+
+            return returnData;
+
         }
     }
 }
